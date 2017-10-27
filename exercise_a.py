@@ -46,7 +46,6 @@ while sum(avg_weight)!=0:
 	# update weight
 	node_weight[ selected_node]=0
 	node_weight[ :]=np.multiply(node_weight, (np.ones(num_nodes)-adj_list[ selected_node, :]))
-	
 	# update avg weight
 	avg_weight[ :]=node_weight/(node_deg+1)
 	print ("New average weight: ", avg_weight)
